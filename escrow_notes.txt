@@ -1,0 +1,5 @@
+Escrow 1:
+creates a coin and then you can send tat coin into 'holding' for someone. The coin can only come out of holding when that person calls release coin. At that point the coin is added to their balance.
+
+
+E
