@@ -3,3 +3,15 @@ creates a coin and then you can send tat coin into 'holding' for someone. The co
 
 
 E
+
+
+
+
+  function tryRelease(address holdingID){
+    holding = holdings[holdingID];
+    for(uint8 i = 0; i < holding.signers.length; i++){
+      if(!holding.signers[i].hasSigned) return false;
+    }
+
+    return true;
+  }
